@@ -1,96 +1,331 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Astronaos Software LLC</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
-<script type="text/javascript" src="jquery/cufon-yui.js"></script>
-    <script type="text/javascript" src="jquery/Book_Antiqua_400.font.js"></script>
-    <script type="text/javascript">
-        Cufon.replace ('h1')('h2')('h3')('h4')('#logo a')('#buttons a');
-    </script>
-<link href="styles.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
-</head>
-<body>
-    <div id="main">
-    <!-- header begins -->
-    <div id="header">
-        <div id="logo">
-            <a href="#">Astronaos Software</a> <b> LLC </b>
-			<h2><a href="#">Built for speed</a></h2>
-        </div>
-        <div id="buttons">
-            <a href="index.html" class="but"  title="">Home</a><div class="but_razd"></div>
-            <a href="about_us.html" class="but" title="">About Us</a><div class="but_razd"></div>
-				<a href="mailto:astronaos@gmail.com">Contact&nbsp;us</a>
-        </div>
-    </div>
-    <!-- header ends -->
-    <!-- top -->
-<!--    <div class="top">
-        <div class="top_top"></div>
-        <div class="top_img">
-		
-		   <div id="slider-wrapper">        
-            <div id="slider" class="nivoSlider">
-                <img src="images/top_img.jpg" alt="" />
-                <img src="images/top_img2.jpg" alt=""/>
-                <img src="images/top_img3.jpg" alt="" />
-            </div>        
-        </div>
+  <title>Astronaos Software</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  body {
 
-<script type="text/javascript" src="jquery/jquery-1.4.3.min.js"></script>
-    <script type="text/javascript" src="jquery/jquery.nivo.slider.pack.js"></script>
-    <script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider();
+      line-height: 1.8;
+      color: #555;
+font-weight:400;
+font-size:15px;
+font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+  }
+.btn-default {
+    color: #fff;
+    background-color: #4C5F76;
+    border-color: #4C5F76;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: 10px 46px;
+}
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+
+  }
+  h4 {
+      font-size: 18px;
+      line-height: 1.15em;
+      color: #303030;
+      font-weight: 600;
+     margin-bottom: 20px;
+
+  }  
+  .jumbotron {
+      background-color: #4C5F76;
+      color: #fff;
+      padding: 100px 25px;
+
+background:url(http://astronaos.com/images/sky-space-dark-galaxy_sm.jpg);
+  }
+  .container-fluid {
+      padding: 30px 40px;
+  }
+  .bg-grey {
+      background-color: #E8E9E9;
+  }
+  .logo-small {
+      color: #303030;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+footer {
+    background: url(http://astronaos.com/images/sky-space-dark-galaxy_sm.jpg);
+}
+footer p {
+    color: #E8E9E9;
+}
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #000;
+      z-index: 9999;
+      border: 0;
+      font-size: 15px !important;
+      line-height: 1.42857143 !important;
+     border-radius: 0;
+text-transform:none;
+
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #4C5F76 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #E8E9E9;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;	
+      animation-duration: 1s;	
+      -webkit-animation-duration: 1s;
+      visibility: visible;			
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }	
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Astronaos</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+         <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="jumbotron text-center">
+  <h1>Astronaos Software<span style="font-size:60%">, LLC</span></h1> 
+  <p style="font-style:italic;">Built for speed</p> 
+</div>
+
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-briefcase logo-small"></span>
+      <h2>Business Solutions</h2>
+      <p>High performance software <b>custom made for you</b>, built for your business needs.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo-small"></span>
+      <h2>Education</h2>
+      <p>Tools and games for the science classroom.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-dashboard logo-small"></span>
+      <h2>Video Games</h2>
+      <p>4X and sandbox games for Windows, Mac, and Linux, built using our <b>2-D multi-threaded game engine</b>.
+</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid bg-grey">
+  <div class="row">
+      <h2>About Astronaos</h2>
+     <div class="col-sm-2">
+      <img src="http://astronaos.com/images/Brian.jpg" class="img-responsive" />
+    </div>
+    <div class="col-sm-10">
+      <h4>Brian W. Mulligan<br><span style="font-weight:400;text-transform:none;font-style:italic;font-size:80%;">Founder</span></h4>      
+      <p>Brian got his start with writing BASIC on a TRS-80 Color Computer 2 in 1985. Since then he has learned a few more languages, and has written software for sales and inventory systems, commercial flight simulators, and supernova simulations. He holds a B.S. in physics from the University of Minnesota and is currently pursuing a Ph.D. in astrophysics from the University of Texas at Austin.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid text-center">
+  <div class="row">
+     <div class="col-sm-12">
+      <a href="mailto:astronaos@gmail.com" target="_blank"><button class="btn btn-default btn-lg">Contact Astronaos<br><span style="font-size:80%;">astronaos@gmail.com</span></button></a>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center bg-grey">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>©2016 Astronaos Software, LLC</p>		
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
     });
-    </script>
-		
-		</div>
-        <div class="top_bot"></div>
-    </div>
--->    <div class="clear" style="height: 9px"></div>
-    <!-- content -->
-    <div class="content_top" ></div>
-    <div id="content" >
-    	<div class="box1_all">
-            <div class="box1">
-                <div class=" box1_top_top"><img src="images/1457528905_banknote.png" alt="" /></div>
-                <div class=" box1_top_middle" style=" width: 300px">
-                    <h1>Business Solutions</h1>
-                </div>
-                <p>High performance software custom made for you, built for your business needs.</p>
-            </div>
-            <div class=" box1_div"></div>
-            
-            <div class="box1">
-                <div class=" box1_top_top"><img src="images/1457528852_study.png" alt="" /></div>
-                <div class=" box1_top_middle" style=" width: 300px">
-                    <h1>Education</h1>
-                </div>
-                    <p>Tools and games for the science classroom.</p>
-            </div>
-            <div class=" box1_div"></div><div class="box1">
-                <div class=" box1_top_top"><img src="images/1457529051_diamond.png" alt="" /></div>
-                <div class=" box1_top_middle" style=" width: 300px">
-                    <h1>Video Games</h1>
-                </div>
-                    <p>4X and sandbox games for Windows, Mac, and Linux, built using our 2-D multithreaded game engine.</p>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </div>
-    <div class="content_bot" ></div>
-	<div id="footer">
-        <div id="footer_box1">
-            <p>Copyright 2016. <!-- Do not remove -->Designed by <a href="http://www.metamorphozis.com/" title="Website Templates">Website Templates</a>. Icon images credit <a href="http://designmodo.com/linecons-free/"> Sergey Shmidt </a><!-- end --><br />
-             
-           <!-- <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> </p> -->
-        </div>
-    </div>
-    </div>
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
 </body>
 </html>
